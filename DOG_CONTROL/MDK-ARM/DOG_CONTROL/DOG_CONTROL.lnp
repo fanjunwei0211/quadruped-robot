@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"dog_control\startup_stm32f103xe.o"
+"dog_control\main.o"
+"dog_control\gpio.o"
+"dog_control\tim.o"
+"dog_control\usart.o"
+"dog_control\stm32f1xx_it.o"
+"dog_control\stm32f1xx_hal_msp.o"
+"dog_control\stm32f1xx_hal_gpio_ex.o"
+"dog_control\stm32f1xx_hal_tim.o"
+"dog_control\stm32f1xx_hal_tim_ex.o"
+"dog_control\stm32f1xx_hal.o"
+"dog_control\stm32f1xx_hal_rcc.o"
+"dog_control\stm32f1xx_hal_rcc_ex.o"
+"dog_control\stm32f1xx_hal_gpio.o"
+"dog_control\stm32f1xx_hal_dma.o"
+"dog_control\stm32f1xx_hal_cortex.o"
+"dog_control\stm32f1xx_hal_pwr.o"
+"dog_control\stm32f1xx_hal_flash.o"
+"dog_control\stm32f1xx_hal_flash_ex.o"
+"dog_control\stm32f1xx_hal_exti.o"
+"dog_control\stm32f1xx_hal_uart.o"
+"dog_control\system_stm32f1xx.o"
+"dog_control\trot.o"
+--library_type=microlib --strict --scatter "DOG_CONTROL\DOG_CONTROL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DOG_CONTROL.map" -o DOG_CONTROL\DOG_CONTROL.axf
